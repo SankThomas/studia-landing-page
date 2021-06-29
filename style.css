@@ -1,0 +1,148 @@
+:root {
+  --bright-orange: #e38d0b;
+  --gray: #323030;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  font-size: 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+body {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  user-select: none;
+}
+
+.btn-cta {
+  background-color: var(--bright-orange);
+  color: var(--white);
+  padding: 10px 20px;
+  border: 2px solid var(--bright-orange);
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-cta:hover {
+  background-color: transparent;
+  color: var(--bright-orange);
+}
+
+.btn-showcase {
+  background-color: var(--gray);
+  color: var(--white);
+  padding: 10px 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-showcase:hover {
+  background-color: var(--white);
+  color: var(--gray);
+  padding: 10px 40px;
+}
+
+.btn-white {
+  background-color: var(--white);
+  padding: 10px 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-white:hover {
+  padding: 10px 40px;
+}
+
+.showcase .text h3 {
+  color: var(--bright-orange);
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Section-2 */
+.section-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Cards */
+.cards article {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.cards article h3 {
+  letter-spacing: 10px;
+}
+
+.cards .overlay {
+  background: url("./images/streaming.jpg") no-repeat center/cover;
+  height: 400px;
+}
+
+.cards .overlay .img-inner {
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.cards .overlay-1 {
+  background: url("./images/youtubing.jpg") no-repeat center/cover;
+  height: 400px;
+}
+
+.cards .overlay-1 .img-inner {
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cards .overlay-2 {
+  background: url("./images/recording.jpg") no-repeat center/cover;
+  height: 400px;
+}
+
+.cards .overlay-2 .img-inner {
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+@media (min-width: 768px) {
+  .section-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-2 .cards:nth-child(3) {
+    grid-column: 1 / 3;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper,
+  .footer-inner {
+    max-width: 1200px;
+    margin: auto;
+  }
+}
