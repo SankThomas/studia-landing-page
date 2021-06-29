@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Studia Microphones" />
+    <meta name="author" content="Thomas Sankara" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Studia Microphones</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <header class="header flex items-center justify-between p-5 xl:px-0">
+        <div class="logo">
+          <a href="./index.html">
+            <img src="./images/header-logo.svg" alt="studia microphones" />
+          </a>
+        </div>
+
+        <nav>
+          <ul class="flex">
+            <li class="mx-2"><a href="#">Cameras</a></li>
+            <li><a href="#">Microphones</a></li>
+          </ul>
+        </nav>
+
+        <div class="cta hidden md:block">
+          <button class="btn-cta">Get in Touch</button>
+        </div>
+      </header>
+
+      <!-- Showcase -->
+      <section
+        class="
+          showcase
+          flex flex-col-reverse
+          md:grid
+          grid-cols-2
+          bg-black
+          md:items-center
+        "
+      >
+        <div
+          class="text text-white py-10 px-5 text-center md:text-left xl:px-20"
+        >
+          <h3 class="orange mb-10">Featured</h3>
+          <h1 class="font-bold text-4xl mb-5">Studia streaming mic</h1>
+          <p class="mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo,
+            rerum!
+          </p>
+          <button class="btn-showcase">Browse Microphones</button>
+        </div>
+
+        <div class="showcase-picture">
+          <img src="./images/hero.jpg" alt="mic 1" class="w-full md:h-full" />
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section-2 md:my-10">
+        <!-- First-card -->
+        <div class="cards relative">
+          <div class="overlay">
+            <div class="img-inner"></div>
+          </div>
+          <article class="absolute bottom-5 text-center p-5 text-white">
+            <h3 class="font-bold text-3xl mb-5 uppercase">Streaming mic</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, veritatis.
+            </p>
+          </article>
+        </div>
+
+        <!-- Second card -->
+        <div class="cards relative">
+          <div class="overlay-1">
+            <div class="img-inner"></div>
+          </div>
+          <article class="absolute bottom-5 text-center p-5 text-white">
+            <h3 class="font-bold text-3xl mb-5 uppercase">Youtubing mic</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+              quibusdam officia quaerat at aspernatur recusandae.
+            </p>
+          </article>
+        </div>
+
+        <!-- Third card -->
+        <div class="cards relative">
+          <div class="overlay-2">
+            <div class="img-inner"></div>
+          </div>
+          <article class="absolute bottom-5 text-center text-white">
+            <h3 class="font-bold text-3xl mb-5 uppercase">Recording mic</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, veritatis.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Featured -->
+      <section class="featured px-5 py-5 xl:px-0">
+        <h3 class="font-bold text-3xl mb-5">Featured</h3>
+        <article class="grid grid-cols-1 gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <div class="featured__cards">
+            <img src="./images/featured-1.jpg" alt="" class="w-full" />
+            <h4 class="font-bold mt-5 mb-1 text-2xl">Camera</h4>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Nesciunt, reiciendis?
+            </p>
+            <button class="btn-showcase">I want this</button>
+          </div>
+
+          <div class="featured__cards">
+            <img src="./images/featured-2.jpg" alt="" class="w-full" />
+            <h4 class="font-bold mt-5 mb-1 text-2xl">Microphone</h4>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Nesciunt, reiciendis?
+            </p>
+            <button class="btn-showcase">I want this</button>
+          </div>
+
+          <div class="featured__cards">
+            <img src="./images/featured-3.jpg" alt="" class="w-full" />
+            <h4 class="font-bold mt-5 mb-1 text-2xl">Stream Deck</h4>
+            <p class="mb-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Nesciunt, reiciendis?
+            </p>
+            <button class="btn-showcase">I want this</button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Get yours today -->
+      <section class="py-10 md:grid grid-cols-2 items-center md:px-5 xl:px-0">
+        <div>
+          <img src="./images/get-yours.jpg" alt="" />
+        </div>
+
+        <div class="px-5">
+          <h3 class="font-bold text-3xl mt-5 mb-1">Get yours today</h3>
+          <p class="mb-5">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et,
+            adipisci!
+          </p>
+          <button class="btn-showcase">Buy</button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div
+        class="
+          footer-inner
+          flex flex-col
+          items-center
+          justify-center
+          p-5
+          text-center
+          md:flex-row md:justify-between md:p-10
+          xl:px-0
+        "
+      >
+        <div class="logo mb-5 md:mb-0">
+          <img src="./images/footer-logo.svg" alt="" />
+        </div>
+
+        <nav class="mb-5 md:mb-0">
+          <ul class="md:flex">
+            <li class="my-1 md:my-0 md:mx-2"><a href="#">Camera</a></li>
+            <li class="my-1 md:my-0 md:mx-2"><a href="#">Microphone</a></li>
+          </ul>
+        </nav>
+
+        <div>
+          <button class="btn-cta">Get In Touch</button>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
